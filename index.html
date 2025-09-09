@@ -3,35 +3,142 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+
   <title>Zettacars.ro — Domeniu de vânzare</title>
-  <link rel="stylesheet" href="styles.css">
+  <meta name="description" content="Domeniul premium Zettacars.ro este de vânzare. Nume scurt, memorabil și ideal pentru proiecte auto. Trimite ofertă." />
+  <link rel="canonical" href="https://zettacars.ro/"/>
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Zettacars.ro — Domeniu de vânzare">
+  <meta property="og:description" content="Domeniu auto scurt și memorabil. Design modern, contact rapid pentru ofertă.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://zettacars.ro/">
+  <meta property="og:image" content="https://zettacars.ro/og-cover.jpg">
+
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" href="/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <main class="page">
-    <div class="card" role="region" aria-labelledby="title">
-      <h1 id="title">Domeniul <span class="accent">Zettacars.ro</span> este de vânzare</h1>
-      <p class="lead">
-        O oportunitate premium pentru proiecte și afaceri din domeniul auto. Domeniu scurt, memorabil și ușor de branduit.
-      </p>
+  <!-- Backdrop FX -->
+  <div class="stage">
+    <canvas id="particles" aria-hidden="true"></canvas>
 
-      <div class="actions">
-        <a id="contactBtn" class="btn" href="mailto:contact@zettacars.ro?subject=Interes%20Zettacars.ro">
-          Trimite ofertă
-        </a>
-        <button id="copyBtn" class="btn ghost" title="Copiază domeniul">Copiază domeniu</button>
-        <a class="link" href="mailto:contact@zettacars.ro">sau contactează direct</a>
-      </div>
+    <!-- Gooey blobs -->
+    <svg class="blobs" viewBox="0 0 800 600" aria-hidden="true" focusable="false">
+      <defs>
+        <filter id="goo">
+          <feGaussianBlur in="SourceGraphic" stdDeviation="16" result="blur"/>
+          <feColorMatrix in="blur" mode="matrix"
+            values="1 0 0 0 0
+                    0 1 0 0 0
+                    0 0 1 0 0
+                    0 0 0 24 -8" result="goo"/>
+          <feBlend in="SourceGraphic" in2="goo" />
+        </filter>
+        <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0%" stop-color="#60a5fa"/>
+          <stop offset="100%" stop-color="#7c3aed"/>
+        </linearGradient>
+        <linearGradient id="g2" x1="1" y1="0" x2="0" y2="1">
+          <stop offset="0%" stop-color="#22d3ee"/>
+          <stop offset="100%" stop-color="#3b82f6"/>
+        </linearGradient>
+      </defs>
+      <g filter="url(#goo)" class="blob-group">
+        <circle class="blob b1" cx="140" cy="140" r="110" fill="url(#g1)"/>
+        <circle class="blob b2" cx="680" cy="180" r="150" fill="url(#g2)"/>
+        <circle class="blob b3" cx="480" cy="480" r="130" fill="url(#g1)"/>
+      </g>
+    </svg>
 
-      <div class="meta">
-        <span>Disponibilitate: <strong>Imediat</strong></span>
-        <span id="copiedToast" class="toast" aria-live="polite" hidden>Copiat în clipboard!</span>
-      </div>
+    <!-- Subtle noise overlay -->
+    <div class="noise" aria-hidden="true"></div>
+  </div>
+
+  <a class="skip-link" href="#main">Sari la conținut</a>
+
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <a class="brand" href="/" aria-label="Acasă Zettacars.ro">
+      <svg class="logo" viewBox="0 0 140 26" aria-hidden="true">
+  <text x="0" y="18" font-size="18" font-weight="800" font-family="system-ui, -apple-system, Segoe UI, Roboto">
+    <tspan fill="#f97316">Zetta</tspan><tspan fill="currentColor">cars</tspan>
+  </text>
+</svg>
+
+      </a>
+      <nav class="nav" aria-label="Principal">
+        <a href="#contact">Contact</a>
+        <button id="theme" class="icon-btn" aria-label="Comută tema">
+          <span class="ico sun" aria-hidden="true">☀</span>
+          <span class="ico moon" aria-hidden="true">🌙</span>
+        </button>
+      </nav>
     </div>
+  </header>
 
-    <footer class="footer">
-      <small>Întrebări? Răspundem rapid la <a href="mailto:contact@zettacars.ro">contact@zettacars.ro</a></small>
-    </footer>
+  <main id="main" class="main">
+    <!-- HERO -->
+    <section class="section hero" aria-labelledby="title">
+      <div class="container">
+        <div class="hero-shell" data-tilt>
+          <div class="badge">
+            <span class="dot"></span>
+            Domeniu premium disponibil
+          </div>
+
+          <h1 id="title">Domeniul <span class="accent">Zettacars.ro</span> este de vânzare</h1>
+          <p class="lead">
+            Nume scurt, memorabil și <em>brandable</em>. Ideal pentru dealership, rent-a-car, service, EV sau auto broker.
+          </p>
+
+          <div class="cta-row">
+            <span class="pill">Disponibilitate: <strong>Imediat</strong></span>
+          </div>
+
+          <div class="hero-meta">
+            <a class="btn" id="contactBtn" href="mailto:natiofleet@gmail.com?subject=Ofert%C4%83%20pentru%20Zettacars.ro">Trimite ofertă</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section contact" aria-labelledby="contactTitle">
+      <div class="container">
+        <div class="contact-shell" data-tilt>
+          <h2 id="contactTitle">Contact</h2>
+          <p class="sub">Trimite o ofertă sau cere detalii. Răspundem rapid.</p>
+          <div class="contact-actions">
+            <a class="btn" href="mailto:natiofleet@gmail.com?subject=Ofert%C4%83%20Zettacars.ro">contact@zettacars.ro</a>
+            <button class="btn ghost" type="button" id="copyMail" data-copy="natiofleet@gmail.com">Copiază email</button>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container foot">
+      <small>© <span id="year"></span> Zettacars.ro • Domeniu de vânzare</small>
+      <a class="foot-link" href="#" aria-label="Înapoi sus">↑</a>
+    </div>
+  </footer>
+
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"Offer",
+    "itemOffered":{"@type":"DomainName","name":"zettacars.ro"},
+    "availability":"https://schema.org/InStock",
+    "priceSpecification":{"@type":"UnitPriceSpecification","priceCurrency":"EUR"},
+    "seller":{"@type":"Organization","name":"Zettacars"},
+    "url":"https://zettacars.ro/"
+  }
+  </script>
 
   <script src="script.js" defer></script>
 </body>
