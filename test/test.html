@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="INODEV dezvoltă aplicații web, aplicații desktop, dashboard-uri business, platforme custom, automatizări și sisteme software personalizate pentru companii.">
+  <meta name="theme-color" content="#070a12">
+  <meta property="og:title" content="INODEV | Software custom pentru web, desktop și business">
+  <meta property="og:description" content="Aplicații web și desktop, dashboard-uri, sisteme interne, platforme custom și automatizări pentru companii moderne.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="ro_RO">
+  <title>INODEV | Aplicații web, desktop și software custom</title>
+  <link rel="stylesheet" href="test.css">
+  <script src="test.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Sari la conținut</a>
+
+  <svg class="svg-sprite" aria-hidden="true" focusable="false">
+    <symbol id="icon-arrow" viewBox="0 0 24 24">
+      <path d="M5 12h14"></path>
+      <path d="m13 6 6 6-6 6"></path>
+    </symbol>
+    <symbol id="icon-code" viewBox="0 0 24 24">
+      <path d="m8 9-4 3 4 3"></path>
+      <path d="m16 9 4 3-4 3"></path>
+      <path d="m14 4-4 16"></path>
+    </symbol>
+    <symbol id="icon-desktop" viewBox="0 0 24 24">
+      <path d="M4 5h16v11H4z"></path>
+      <path d="M9 20h6"></path>
+      <path d="M12 16v4"></path>
+    </symbol>
+    <symbol id="icon-dashboard" viewBox="0 0 24 24">
+      <path d="M4 5h16v14H4z"></path>
+      <path d="M4 10h16"></path>
+      <path d="M9 14h2"></path>
+      <path d="M14 14h5"></path>
+    </symbol>
+    <symbol id="icon-workflow" viewBox="0 0 24 24">
+      <path d="M6 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"></path>
+      <path d="M18 22a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"></path>
+      <path d="M6 8v2a4 4 0 0 0 4 4h4a4 4 0 0 1 4 4"></path>
+    </symbol>
+    <symbol id="icon-car" viewBox="0 0 24 24">
+      <path d="m5 12 2-5h10l2 5"></path>
+      <path d="M3 12h18v6H3z"></path>
+      <path d="M7 18v2"></path>
+      <path d="M17 18v2"></path>
+      <path d="M6 15h1"></path>
+      <path d="M17 15h1"></path>
+    </symbol>
+    <symbol id="icon-trophy" viewBox="0 0 24 24">
+      <path d="M8 4h8v5a4 4 0 0 1-8 0z"></path>
+      <path d="M8 6H4v2a4 4 0 0 0 4 4"></path>
+      <path d="M16 6h4v2a4 4 0 0 1-4 4"></path>
+      <path d="M12 13v5"></path>
+      <path d="M8 20h8"></path>
+    </symbol>
+    <symbol id="icon-ticket" viewBox="0 0 24 24">
+      <path d="M4 8a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v3a2 2 0 0 0 0 4v1a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-1a2 2 0 0 0 0-4z"></path>
+      <path d="M9 9h6"></path>
+      <path d="M9 15h4"></path>
+    </symbol>
+    <symbol id="icon-api" viewBox="0 0 24 24">
+      <path d="M7 7h10v10H7z"></path>
+      <path d="M3 12h4"></path>
+      <path d="M17 12h4"></path>
+      <path d="M12 3v4"></path>
+      <path d="M12 17v4"></path>
+    </symbol>
+    <symbol id="icon-database" viewBox="0 0 24 24">
+      <path d="M5 6c0-2 14-2 14 0v12c0 2-14 2-14 0z"></path>
+      <path d="M5 6c0 2 14 2 14 0"></path>
+      <path d="M5 12c0 2 14 2 14 0"></path>
+    </symbol>
+    <symbol id="icon-check" viewBox="0 0 24 24">
+      <path d="m5 12 4 4L19 6"></path>
+    </symbol>
+  </svg>
+
+  <div class="site-bg" aria-hidden="true"></div>
+
+  <header class="site-header" data-header>
+    <div class="container header-inner">
+      <a class="brand" href="#acasa" aria-label="INODEV acasă">
+        <span class="brand-mark">IN</span>
+        <span class="brand-text">INODEV</span>
+      </a>
+
+      <nav class="site-nav" id="site-nav" aria-label="Navigație principală" data-nav>
+        <a href="#acasa">Acasă</a>
+        <a href="#servicii">Servicii</a>
+        <a href="#proiecte">Proiecte</a>
+        <a href="#proces">Proces</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <a class="header-cta" href="#contact">Hai să discutăm</a>
+
+      <button class="menu-toggle" type="button" aria-label="Deschide meniul" aria-controls="site-nav" aria-expanded="false" data-menu-toggle>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero section-pad" id="acasa" aria-labelledby="hero-title">
+      <div class="container hero-grid">
+        <div class="hero-copy" data-reveal>
+          <p class="eyebrow">Software custom pentru web, desktop și operațiuni interne</p>
+          <h1 id="hero-title">Construim sisteme digitale care transformă procesele business în software real.</h1>
+          <p class="hero-lead">
+            INODEV dezvoltă aplicații web, aplicații desktop, dashboard-uri business, platforme custom, automatizări și sisteme software personalizate pentru companii moderne.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#proiecte">
+              Vezi proiectele
+              <svg class="btn-icon" aria-hidden="true"><use href="#icon-arrow"></use></svg>
+            </a>
+            <a class="btn btn-secondary" href="#contact">Contactează-ne</a>
+          </div>
+
+          <dl class="hero-metrics" aria-label="Indicatori INODEV">
+            <div>
+              <dt><span data-counter="4">0</span></dt>
+              <dd>produse prezentate</dd>
+            </div>
+            <div>
+              <dt><span data-counter="9">0</span>+</dt>
+              <dd>tipuri de soluții</dd>
+            </div>
+            <div>
+              <dt><span data-counter="100">0</span>%</dt>
+              <dd>responsive by design</dd>
+            </div>
+          </dl>
+        </div>
+
+        <div class="hero-visual" role="img" aria-label="Previzualizare abstractă a unui sistem software INODEV" data-reveal>
+          <div class="signal-lines" aria-hidden="true"></div>
+          <div class="floating-panel panel-a">
+            <span>API + DB</span>
+            <strong>128ms</strong>
+          </div>
+          <div class="floating-panel panel-b">
+            <span>Desktop/Web</span>
+            <strong>Unified</strong>
+          </div>
+          <div class="product-window">
+            <div class="window-top">
+              <span></span>
+              <span></span>
+              <span></span>
+              <strong>INODEV Operations OS</strong>
+            </div>
+            <div class="window-body">
+              <aside class="window-sidebar">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+              </aside>
+              <div class="dashboard-preview">
+                <div class="preview-title">
+                  <span>Sistem intern</span>
+                  <strong>Live operations</strong>
+                </div>
+                <div class="kpi-row">
+                  <div><span>Procese</span><strong>42</strong></div>
+                  <div><span>Automatizări</span><strong>18</strong></div>
+                  <div><span>Tickete</span><strong>31</strong></div>
+                </div>
+                <div class="preview-chart">
+                  <i style="--bar: 38%"></i>
+                  <i style="--bar: 62%"></i>
+                  <i style="--bar: 51%"></i>
+                  <i style="--bar: 86%"></i>
+                  <i style="--bar: 74%"></i>
+                  <i style="--bar: 92%"></i>
+                </div>
+                <div class="task-list">
+                  <span><b></b>Documente sincronizate</span>
+                  <span><b></b>Status operațional actualizat</span>
+                  <span><b></b>Notificări trimise automat</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-pad services" id="servicii" aria-labelledby="services-title">
+      <div class="container">
+        <div class="section-head" data-reveal>
+          <p class="eyebrow">Servicii</p>
+          <h2 id="services-title">Software pentru companii: de la interfețe rapide până la sisteme interne complete.</h2>
+          <p>
+            Dezvoltăm produse digitale pentru web, desktop și operațiuni interne: aplicații, dashboard-uri, platforme, baze de date, API-uri și automatizări.
+          </p>
+        </div>
+
+        <div class="service-grid">
+          <article class="service-card" data-reveal>
+            <svg class="card-icon" aria-hidden="true"><use href="#icon-code"></use></svg>
+            <h3>Aplicații web</h3>
+            <p>Aplicații rapide, responsive și ușor de extins, construite în jurul fluxurilor reale de business.</p>
+          </article>
+          <article class="service-card" data-reveal>
+            <svg class="card-icon" aria-hidden="true"><use href="#icon-desktop"></use></svg>
+            <h3>Aplicații desktop</h3>
+            <p>Software pentru stații de lucru, procese locale, operare internă și scenarii unde browserul nu este suficient.</p>
+          </article>
+          <article class="service-card" data-reveal>
+            <svg class="card-icon" aria-hidden="true"><use href="#icon-dashboard"></use></svg>
+            <h3>Dashboard-uri administrative</h3>
+            <p>Panouri clare pentru date, utilizatori, rapoarte, documente, statusuri și operațiuni zilnice.</p>
+          </article>
+          <article class="service-card" data-reveal>
+            <svg class="card-icon" aria-hidden="true"><use href="#icon-workflow"></use></svg>
+            <h3>Sisteme interne pentru companii</h3>
+            <p>Transformăm procese repetitive, aprobări, fluxuri și comunicare internă în aplicații clare.</p>
+          </article>
+          <article class="service-card" data-reveal>
+            <svg class="card-icon" aria-hidden="true"><use href="#icon-database"></use></svg>
+            <h3>Software de management</h3>
+            <p>Soluții pentru clienți, rezervări, flotă, task-uri, competiții, documente, plăți și inventar.</p>
+          </article>
+          <article class="service-card" data-reveal>
+            <svg class="card-icon" aria-hidden="true"><use href="#icon-api"></use></svg>
+            <h3>Integrare API și baze de date</h3>
+            <p>Conectăm aplicații, formulare, CRM, baze de date, notificări și rapoarte într-un sistem coerent.</p>
+          </article>
+          <article class="service-card" data-reveal>
+            <svg class="card-icon" aria-hidden="true"><use href="#icon-ticket"></use></svg>
+            <h3>Ticketing și management task-uri</h3>
+            <p>Fluxuri pentru sesizări, conversații, statusuri, notificări și urmărirea problemelor până la rezolvare.</p>
+          </article>
+          <article class="service-card" data-reveal>
+            <svg class="card-icon" aria-hidden="true"><use href="#icon-trophy"></use></svg>
+            <h3>Platforme custom</h3>
+            <p>Produse software pentru competiții, înscrieri, administrare, operațiuni și servicii specializate.</p>
+          </article>
+          <article class="service-card" data-reveal>
+            <svg class="card-icon" aria-hidden="true"><use href="#icon-check"></use></svg>
+            <h3>Automatizări operaționale</h3>
+            <p>Reducem munca manuală prin fluxuri automate, validări, notificări, exporturi și sincronizări.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-pad projects" id="proiecte" aria-labelledby="projects-title">
+      <div class="container">
+        <div class="section-head section-head-split" data-reveal>
+          <div>
+            <p class="eyebrow">Portofoliu</p>
+            <h2 id="projects-title">Proiecte construite în jurul operațiunilor reale.</h2>
+          </div>
+          <p>
+            Platforme business, sisteme de management, dashboard-uri și landing pages gândite pentru utilizatori, echipe și decizii rapide.
+          </p>
+        </div>
+
+        <div class="project-grid">
+          <article class="project-card project-fleet" data-reveal>
+            <div class="project-visual" aria-hidden="true">
+              <div class="mini-window">
+                <span class="mini-line long"></span>
+                <span class="mini-line"></span>
+                <div class="mini-map">
+                  <i></i><i></i><i></i>
+                </div>
+              </div>
+            </div>
+            <div class="project-content">
+              <span class="project-badge">Dashboard business</span>
+              <h3>WiseCarsDashboard</h3>
+              <p>
+                Proiect dezvoltat în colaborare cu WiseCars pentru administrarea unei flote auto, rezervări, clienți, documente mașini, statusuri, plăți și operațiuni zilnice.
+              </p>
+              <div class="tag-list">
+                <span>Flotă auto</span>
+                <span>Rezervări</span>
+                <span>Documente</span>
+                <span>Plăți</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card project-sport" data-reveal>
+            <div class="project-visual" aria-hidden="true">
+              <div class="scoreboard">
+                <strong>FRK</strong>
+                <span>Cluburi</span>
+                <span>Sportivi</span>
+                <span>Categorii</span>
+              </div>
+            </div>
+            <div class="project-content">
+              <span class="project-badge">Platformă custom</span>
+              <h3>GameStats</h3>
+              <p>
+                Platformă realizată cu FRK pentru competiții sportive și karate: înscrieri, cluburi, sportivi, categorii, plăți și organizare competițională.
+              </p>
+              <div class="tag-list">
+                <span>Competiții</span>
+                <span>Înscrieri</span>
+                <span>Cluburi</span>
+                <span>Plăți</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card project-ticket" data-reveal>
+            <div class="project-visual" aria-hidden="true">
+              <div class="ticket-stack">
+                <span>Sesizare #248</span>
+                <span>În lucru</span>
+                <span>Notificare trimisă</span>
+              </div>
+            </div>
+            <div class="project-content">
+              <span class="project-badge">Sistem operațional</span>
+              <h3>TicketFlow</h3>
+              <p>
+                Platformă pentru taskuri și tickete în asociațiile de administrare a blocurilor, cu sesizări, conversații, statusuri, notificări și management operațional.
+              </p>
+              <div class="tag-list">
+                <span>Tickete</span>
+                <span>Conversații</span>
+                <span>Statusuri</span>
+                <span>Notificări</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card project-domain" data-reveal>
+            <div class="project-visual" aria-hidden="true">
+              <div class="domain-card">
+                <span>ZettaCars.ro</span>
+                <strong>Premium domain</strong>
+              </div>
+            </div>
+            <div class="project-content">
+              <span class="project-badge">Landing page</span>
+              <h3>ZettaCars</h3>
+              <p>
+                Site de prezentare și vânzare a domeniului ZettaCars.ro, construit ca landing page simplu, elegant și concentrat pe conversie.
+              </p>
+              <div class="tag-list">
+                <span>Landing</span>
+                <span>Branding</span>
+                <span>SEO basic</span>
+                <span>Contact rapid</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-pad process" id="proces" aria-labelledby="process-title">
+      <div class="container">
+        <div class="section-head" data-reveal>
+          <p class="eyebrow">Cum lucrăm</p>
+          <h2 id="process-title">Un proces clar, cu livrabile vizibile la fiecare etapă.</h2>
+          <p>
+            Reducem ambiguitatea prin structură: întâi înțelegem procesul business, apoi proiectăm experiența, dezvoltăm sistemul, testăm și lansăm.
+          </p>
+        </div>
+
+        <ol class="process-list">
+          <li data-reveal>
+            <span>01</span>
+            <h3>Analizăm ideea</h3>
+            <p>Clarificăm obiectivele, utilizatorii, fluxurile, datele și prioritățile reale.</p>
+          </li>
+          <li data-reveal>
+            <span>02</span>
+            <h3>Proiectăm experiența</h3>
+            <p>Definim structura, interfețele, stările și traseul până la acțiune.</p>
+          </li>
+          <li data-reveal>
+            <span>03</span>
+            <h3>Dezvoltăm sistemul</h3>
+            <p>Scriem cod curat pentru web, desktop, API-uri, baze de date și automatizări.</p>
+          </li>
+          <li data-reveal>
+            <span>04</span>
+            <h3>Testăm și optimizăm</h3>
+            <p>Verificăm responsive, performanță, accesibilitate, date și fluxuri critice.</p>
+          </li>
+          <li data-reveal>
+            <span>05</span>
+            <h3>Lansăm și susținem</h3>
+            <p>Publicăm, monitorizăm și oferim suport pentru evoluția produsului software.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section-pad tech" id="tehnologii" aria-labelledby="tech-title">
+      <div class="container tech-layout">
+        <div class="tech-copy" data-reveal>
+          <p class="eyebrow">Tehnologii</p>
+          <h2 id="tech-title">Stack pragmatic pentru produse stabile și interfețe rapide.</h2>
+          <p>
+            Alegem tehnologia în funcție de proiect, mentenanță și costul real de operare. Fără complexitate gratuită.
+          </p>
+        </div>
+        <div class="tech-cloud" data-reveal>
+          <span>HTML</span>
+          <span>CSS</span>
+          <span>JavaScript</span>
+          <span>Java</span>
+          <span>Spring Boot</span>
+          <span>MySQL</span>
+          <span>REST API</span>
+          <span>Desktop apps</span>
+          <span>API integrations</span>
+          <span>Git</span>
+          <span>GitHub</span>
+          <span>Bitbucket</span>
+          <span>Cloud hosting</span>
+          <span>Responsive UI</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-section" id="contact" aria-labelledby="cta-title">
+      <div class="container cta-layout" data-reveal>
+        <div>
+          <p class="eyebrow">Contact</p>
+          <h2 id="cta-title">Ai nevoie de un sistem software pentru compania ta?</h2>
+          <p>Transformăm conceptele în produse digitale reale: aplicații web, desktop, platforme custom, automatizări și sisteme interne pregătite pentru utilizatori.</p>
+        </div>
+        <div class="contact-panel">
+          <a class="btn btn-primary" href="mailto:contact@inodev.ro?subject=Discuție%20proiect%20INODEV">
+            Hai să discutăm
+            <svg class="btn-icon" aria-hidden="true"><use href="#icon-arrow"></use></svg>
+          </a>
+          <button class="copy-button" type="button" data-copy="contact@inodev.ro" aria-label="Copiază adresa de email">
+            contact@inodev.ro
+          </button>
+          <p class="copy-status" role="status" aria-live="polite" data-copy-status></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <a class="brand footer-brand" href="#acasa" aria-label="INODEV acasă">
+          <span class="brand-mark">IN</span>
+          <span class="brand-text">INODEV</span>
+        </a>
+        <p>Software custom pentru web, desktop și operațiuni interne: aplicații, dashboard-uri, platforme business și automatizări pentru companii moderne.</p>
+      </div>
+      <nav aria-label="Linkuri rapide footer">
+        <a href="#servicii">Servicii</a>
+        <a href="#proiecte">Proiecte</a>
+        <a href="#proces">Proces</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="footer-contact">
+        <span>Email</span>
+        <a href="mailto:contact@inodev.ro">contact@inodev.ro</a>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <span>© <span data-year></span> INODEV. Toate drepturile rezervate.</span>
+      <a href="#acasa" aria-label="Înapoi sus">Înapoi sus</a>
+    </div>
+  </footer>
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "INODEV",
+      "description": "Software custom pentru web, desktop, dashboard-uri, platforme business, sisteme interne și automatizări.",
+      "email": "contact@inodev.ro"
+    }
+  </script>
+</body>
+</html>
